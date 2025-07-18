@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promise Generator</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-Dov3POoy.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DA5ejK7I.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-Dov3POoy.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-BMWjCTR0.css">
   </head>
 
   <body>
@@ -17,24 +23,26 @@
     </header>
     <main>
       <form class="form">
-        <label>
+        <label class="delay-label">
           Delay (ms)
           <input type="number" name="delay" required />
         </label>
 
-        <fieldset>
+        <fieldset class="fieldset">
           <legend>State</legend>
-          <label>
-            <input type="radio" name="state" value="fulfilled" required />
-            Fulfilled
-          </label>
-          <label>
-            <input type="radio" name="state" value="rejected" required />
-            Rejected
-          </label>
+          <div class="status-selector">
+            <label>
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label>
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </div>
         </fieldset>
 
-        <button type="submit">Create notification</button>
+        <button class="btn" type="submit">Create notification</button>
       </form>
     </main>
 
