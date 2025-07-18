@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promise Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -15,24 +20,26 @@
     </header>
     <main>
       <form class="form">
-        <label>
+        <label class="delay-label">
           Delay (ms)
           <input type="number" name="delay" required />
         </label>
 
-        <fieldset>
+        <fieldset class="fieldset">
           <legend>State</legend>
-          <label>
-            <input type="radio" name="state" value="fulfilled" required />
-            Fulfilled
-          </label>
-          <label>
-            <input type="radio" name="state" value="rejected" required />
-            Rejected
-          </label>
+          <div class="status-selector">
+            <label>
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label>
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </div>
         </fieldset>
 
-        <button type="submit">Create notification</button>
+        <button class="btn" type="submit">Create notification</button>
       </form>
     </main>
 
